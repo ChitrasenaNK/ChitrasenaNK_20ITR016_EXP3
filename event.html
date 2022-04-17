@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <title>EIE Events</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+  
+          .design{
+            width:95%;
+            height:50%;
+            align-items: center;
+            margin: 30px;
+            border: 30px;
+            padding: 5px 5px 5px;
+          }
+          
+        </style>
+    </head>
+    <body>
+      <div class="container-fluid">
+        <div class="row" style="background-color: rgb(208, 207, 248);">
+            <div class="col-md-2">
+                <img src="keclogo.jpg" alt="KEC" width="100px" height="100px" >
+            </div>
+            <div class="col-md-10 pt-1" style="text-align:left">
+                
+                <h4 style="color: rgb(11, 11, 56);">KONGU ENGINEERING COLLEGE</h4>
+                <h5 style="color:rgb(10, 10, 77)">DEPARTMENT OF ELECTRONICS AND INSTRUMENTATION ENGINEERING</h5>
+            </div>
+
+            
+        </div>
+        <nav class="navbar navbar-expand-sm bg-dark text-white navbar-fixed-top">        
+            
+               
+                
+            <ul class="nav navbar-nav pt-1">
+              <li class="nav-item"><a class="nav-link" href="index.html" style="color: white;" >HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="highlights.html" style="color: white;">HIGHLIGHTS</a></li>
+              <li class="nav-item"><a class="nav-link" href="lab.html" style="color: white;">LABORATORIES</a></li>
+              <li class="nav-item"><a class="nav-link" href="faculty.html" style="color: white;" active>FACULTY</a></li>
+              
+              <li class="nav-item"><a class="nav-link" href="event.html" style="color: white;">EVENTS-REGISTRATION</a></li>
+            </ul>
+                
+        </nav>
+        <h4 style="color: rgba(4, 47, 6, 0.712);text-align: center;text-decoration: underline;">FILL THIS FORM TO REGISTER FOR EVENTS HOSTED BY EIE DEPARTMENT</h4>
+        <div class="container pt-4" style="text-align: justify;background-color:darkseagreen; border-radius: 25px; width: fit-content;">
+            <form class="form-horizontal" action="#">
+                
+                        <div class="form-group">
+                            <label for="name" style="font-weight:bold;">NAME:</label>
+                            <input type="text" name="nme" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" style="font-weight:bold;">REGISTER NO:</label>
+                            <input type="alphanumeric" name="rno"  class="form-control" required>
+                           </div>     
+                           <div class="form-group">
+                            <label for="name" style="font-weight:bold;">EMAIL:</label>
+                            <input type="email" name="email"  class="form-control" required>
+                          </div>           
+                
+              
+              
+              
+              
+              <br>
+              
+               <label for="name" style="font-weight:bold;">ACADEMIC YEAR:</label>
+               <input type="number" name="aca_year" min="2018" max="2023" required step="1" value="2019">   TO   
+               <input type="number" name="aca_year" min="2022" max="2027" required step="1" value="2023"> 
+               <br>
+               <br>
+               <select class="custom-select custom-select-sm" style="font-weight:bold;">
+                <option selected>YEAR</option>
+                <option value="1">I</option>
+                <option value="2">II</option>
+                <option value="3">III</option>
+                <option value="4">IV</option>
+              </select>
+              <select class="custom-select custom-select-sm" style="font-weight:bold;">
+                <option selected>SECTION</option>
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+              </select>
+       
+               <select name="department" id="dept" style="font-weight:bold;" class="custom-select "  aria-placeholder="selct department" required>
+               <option selected>SELECT DEPARTMENT</option>
+                <option value="it">INFORMATION TECHNOLOGY</option>
+                <option value="cse">COMPUTER SCIENCE AND ENGINEERING</option>
+                <option value="ece">ELECTRICAL AND COMMUNICATION ENGINEERING</option>
+                <option value="eee">ELECTRICAL AND ELECTRONICS ENGINEERNIG</option>
+                <option value="civil">CIVIL ENGINEERING</option>
+                <option value="mechanical">MECHANICAL ENGINEERING</option>
+                <option value="mechatronics">MECHATRONICS ENGINEERING</option>
+                <option value="e&i">ELECTRONICS AND INSTRUMENTATION</option>
+                <option value="mba">MASTER OF BUSINESS ADMINISTRATION</option>
+                <option value="mca">MASTER OF COMPUTER APPLICATIONS</option>
+               </select>
+               <br>
+               <br>
+               <input class="form-check-input" type="radio" name="h/d"  value="option1" >
+               <label class="form-check-label" for="exampleRadios1" style="font-weight: bold;">DAYSCHOLAR  </label>
+            
+           
+               <input class="form-check-input" type="radio" name="h/d"  value="option2">
+               <label class="form-check-label" for="exampleRadios2" style="font-weight: bold;">HOSTEL  </label>
+               <br><br>
+               <label for="name" style="font-weight:bold;">SELECT THE EVENT FOR REGISTRATION:</label><br>
+               <select name="Events" id="evn" style="font-weight:bold;"  size="3" required>
+                
+                 <option value="e1">IDEATHON</option>
+                 <option value="e2">PROJECT EXPO</option>
+                 <option value="e3">E-HORYZON</option>
+                 <option value="e4">HACKATHON</option>
+                 <option value="e5">NEXUS</option>
+                 <option value="e6">TRACKERS WORKSHOP</option>
+                 <option value="e7">EPOCH</option>
+                 
+                 
+                </select>   
+               
+               <br>
+               
+       
+             <div class="form-group">
+               <label for="address" style="font-weight: bold;">ADDRESS</label>
+               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+             </div>
+             <hr>
+             
+             <div style="text-align: center;">
+             <button type="button" class="btn btn-primary active">SUBMIT</button>
+             <button type="button" class="btn btn-primary disabled">RESET</button>
+             </div>
+             <hr>
+            </form>
+           </div>
+
+
+      </div>
+    </body>
+</html>
